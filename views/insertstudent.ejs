@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student</title>
+    <link rel="stylesheet" href="../assets/css/student.css">
+   <style>
+     @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+     @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+<%- include ../partials/navbar %>
+</header>
+
+<div class="container">
+  <div class="col-md-6 mx-auto text-center">
+	 <div class="header-title">
+		<h1 class="wv-heading--title">
+		Insert Student Info
+		</h1>
+	 </div>
+  </div>
+  
+  <hr size="6" width="100%" align="left" color="green">
+  
+  <div class="row">
+	 <div class="col-md-4 mx-auto">
+		<div class="myform form ">
+		   
+           
+           <form action="/insert/student" method="post" >
+			  <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Id:</label>
+				 <input type="text" name="s_id"  class="form-control my-input"  placeholder=" Id" required>
+			  </div>
+			  <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Name:</label>
+				 <input type="text" name="s_name"  class="form-control my-input"  placeholder="Name"required>
+			  </div>
+			  <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Father:</label>
+				 <input type="text"  name="s_father"  class="form-control my-input" placeholder="Father Name" >
+			  </div>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Mother:</label>
+				 <input type="text"  name="s_mother"  class="form-control my-input" placeholder="Mother Name" >
+			  </div>
+
+        <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Sex:</label>
+				 <input type="text"  name="s_gender"  class="form-control my-input" placeholder="m/f" >
+			  </div>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Branch:</label>
+				 <input type="text"  name="b_id"  class="form-control my-input" placeholder="Branch Id" >
+			  </div>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">DOB:</label>
+				 <input type="date"  name="s_dob"  class="form-control my-input" placeholder="DOB" >
+			  </div>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">Phone:</label>
+				 <input type="text"  name="s_phone"  class="form-control my-input" placeholder="Phone" >
+			  </div>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label label">SSLC:</label>
+				 <input type="text"  name="s_sslc"  class="form-control my-input" placeholder="SSLC %" >
+			  </div>
+               <div class="form-group">
+                 <label for="example-text-input" class="col-2 col-form-label label">PUC:</label>
+				 <input type="text"  name="s_puc"  class="form-control my-input" placeholder="PUC %" >
+			  </div>
+               <div class="form-group">
+                 <label for="example-text-input" class="col-2 col-form-label label">Gradution:</label>
+				 <input type="text"  name="s_graduation"  class="form-control my-input" placeholder="Gradution %" >
+			  </div>
+               <div class="form-group">
+                 <label for="example-text-input" class="col-2 col-form-label label">Passing:</label>
+				 <input type="number"  name="s_pass"  class="form-control my-input" placeholder="Year of Passing" >
+			  </div>
+			  <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label"></label>
+                        <div class="col-10">
+                            <input id="inputClass" class=" form-control  btn-outline-success " name="" type="submit" value="submit">
+                        </div>
+                    </div>
+		   </form>
+		</div>
+	 </div>
+  </div>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+        </body>
+
+</html>

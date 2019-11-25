@@ -1,0 +1,59 @@
+.awesome {
+    font-family: 'Monoton', cursive;
+    font-family: 'Michroma', sans-serif;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #313131;
+    font-size: 45px;
+    font-weight: 900;
+    position: absolute;
+    -webkit-animation: colorchange 10s infinite alternate;
+    width: 180px 180px;
+    border: 10px solid green;
+    padding: 10px;
+    margin: 40px;
+    margin-top: 100px;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: rgb(184, 28, 132);
+    }
+    10% {
+        color: #40055a;
+    }
+    20% {
+        color: #818a04;
+    }
+    30% {
+        color: #f86b0e;
+    }
+    40% {
+        color: blue;
+    }
+    50% {
+        color: #34495e;
+    }
+    60% {
+        color: rgb(18, 167, 18);
+    }
+    70% {
+        color: #2980b9;
+    }
+    80% {
+        color: #f1c40f;
+    }
+    90% {
+        color: #101416;
+    }
+    100% {
+        color: pink;
+    }
+}
+
+body {
+    background: url(../images/success.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}

@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="../assets/css/booking.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+        <%- include ../../partials/navbar %>
+    </header>
+    <div class="container">
+        <div class="head ">
+            <h1 class="display-2 text-center">
+                Company
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div id="box">
+            <table width="100%" cellspacing="20px" cellpadding="20px">
+                <tbody>
+                    <tr>
+                        <th>
+                            <h2>Id</h2>
+                        </th>
+                        <th>
+                            <h2>Name</h2>
+                        </th>
+                        <th>
+                            <h2>Location</h2>
+                        </th>
+                        <th>
+                            <h2>Type</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>
+                                <%=id%>
+                            </h3>
+                        </td>
+                        <td>
+                            <h3>
+                                <%=name%>
+                            </h3>
+                        </td>
+                        <td>
+                            <h3>
+                                <%= phone%>
+                            </h3>
+                        </td>
+                         <td>
+                            <h3>
+                                <%= location%>
+                            </h3>
+                        </td>
+                         <td>
+                            <h3>
+                                <%= type%>
+                            </h3>
+                        </td>
+                        <td>
+                            <% for(var i=0;i<data.length;i++){ %>
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            <%= data[i]%>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <br>
+                                <% } %>
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
