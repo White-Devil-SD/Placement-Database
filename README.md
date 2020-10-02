@@ -1,3 +1,3 @@
 # Placement-Database
-Node Js
-This is a miniproject of Placement Management  Which is done using Node.js and it is Relational Database.
+This project is built using Node Js
+This is a miniproject of Placement Management it is Relational Database.
